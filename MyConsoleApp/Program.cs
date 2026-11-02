@@ -1,2 +1,3 @@
-﻿Console.WriteLine("Hello, World from C# App!");
-Console.WriteLine("This is a simple C# console application.");
+﻿Console.WriteLine("Hello, World from C# App! 1");
+Console.WriteLine("Hello, World from C# App! 2");
+Console.WriteLine("Hello, World from C# App! 3");
