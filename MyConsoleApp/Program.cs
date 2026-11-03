@@ -1,13 +1,17 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
+
 var builder = Host.CreateApplicationBuilder(args);
+builder.Configuration.AddUserSecrets<Program>();
+
 
 var appsettings = builder.Configuration.GetSection("AppSettings");
 
 Console.WriteLine($"Environment: {appsettings["EnvironmentName"]}");
 Console.WriteLine($"Greeting: {appsettings["Greeting"]}");
 Console.WriteLine($"Password: {appsettings["Password"]}");
+
 
 public sealed class Appsettings
 {
