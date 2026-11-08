@@ -8,17 +8,19 @@ builder.Configuration.AddUserSecrets<Program>();
 
 var appsettings = builder.Configuration.GetSection("AppSettings");
 
-//Console.WriteLine($"Greeting: {appsettings["Greeting"]}");
+Console.WriteLine($"Greeting: {appsettings["Greeting"]}");
 Console.WriteLine($"Password: {appsettings["Password"]}");
 Console.WriteLine($"MaxNumber: {appsettings["MaxNumber"]}");
 
 
  var p = new Person();
- p.Name = "John Doe";
+ p.FirstName = "John Doe";
  p.Age = 30;
  p.ID = 12345;
+ p.DateOfBirth = new DateOnly(2008, 1, 1);
 
-Console.WriteLine($"Person Name: {p.Name}, Age: {p.Age}, ID: {p.ID}");
+Console.WriteLine($"Date of Birth: {p.DateOfBirth}");
+Console.WriteLine($"Person Name: {p.FirstName}, Age: {p.Age}, ID: {p.ID}");
 
 public sealed class Appsettings
 {
