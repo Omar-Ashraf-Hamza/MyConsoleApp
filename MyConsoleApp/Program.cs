@@ -21,6 +21,7 @@ Console.WriteLine($"MaxNumber: {appsettings["MaxNumber"]}");
 
 Console.WriteLine($"Date of Birth: {p.DateOfBirth}");
 Console.WriteLine($"Person Name: {p.FirstName}, Age: {p.Age}, ID: {p.ID}");
+Console.WriteLine($"Environment Name: {appsettings["EnvironmentName"]}");
 
 public sealed class Appsettings
 {
