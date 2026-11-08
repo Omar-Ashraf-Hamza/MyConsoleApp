@@ -12,7 +12,10 @@ public class Person
 
     public DateOnly DateOfBirth { get; set; }
     
+    
+    
     public string PlaceOfBirth { get; set; } = string.Empty;
     
+    public string Nationality { get; set; } = string.Empty;
     
 }
