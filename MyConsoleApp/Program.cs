@@ -18,6 +18,7 @@ Console.WriteLine($"MaxNumber: {appsettings["MaxNumber"]}");
  p.Age = 30;
  p.ID = 12345;
  p.DateOfBirth = new DateOnly(2008, 1, 1);
+ p.Nationality = "American";
 
 Console.WriteLine($"Date of Birth: {p.DateOfBirth}");
 Console.WriteLine($"Person Name: {p.FirstName}, Age: {p.Age}, ID: {p.ID}");
